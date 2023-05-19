@@ -1,3 +1,3 @@
 # DIAGRAMA
 
-<img src="pic_trulli.jpg">
+<img src="Diagrama_Entidade_Relacionamento.png">
