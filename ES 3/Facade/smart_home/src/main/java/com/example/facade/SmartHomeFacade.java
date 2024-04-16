@@ -1,15 +1,18 @@
 package com.example.facade;
 
+import com.example.systems.AirConditioner;
+import com.example.systems.Lights;
+import com.example.systems.SecuritySystem;
 
 public class SmartHomeFacade {
     private Lights lights;
     private SecuritySystem securitySystem;
-    private Thermostat thermostat;
+    private AirConditioner airConditioner;
 
     public SmartHomeFacade() {
         this.lights = new Lights();
         this.securitySystem = new SecuritySystem();
-        this.thermostat = new Thermostat();
+        this.airConditioner = new AirConditioner();
     }
 
     public void leaveHome() {
@@ -20,10 +23,10 @@ public class SmartHomeFacade {
     public void returnHome() {
         securitySystem.disarm();
         lights.turnOn();
-        thermostat.setTemperature(22); // Colocar Temperatura Ambiente Quando Volta Pra Casa
+        airConditioner.setTemperature(22); // Colocar Temperatura Ambiente Quando Volta Pra Casa
     }
 
     public void setTemperature(int temperature) {
-        thermostat.setTemperature(temperature);
+        airConditioner.setTemperature(temperature);
     }
 }
