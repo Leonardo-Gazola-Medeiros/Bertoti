@@ -9,15 +9,15 @@ public class App
         SmartHomeFacade smartHome = new SmartHomeFacade();
 
         // Leaving home
-        System.out.println("Leaving home...");
+        System.out.println("Saindo de Casa...");
         smartHome.leaveHome();
 
         // Returning home
-        System.out.println("\nReturning home...");
+        System.out.println("\nVoltando Para Casa...");
         smartHome.returnHome();
 
         // Adjusting thermostat temperature
-        System.out.println("\nAdjusting air conditioner temperature...");
+        System.out.println("\nAjustando a Temperatura do Ar Condicionado...");
         smartHome.setTemperature(22);
     }
 }

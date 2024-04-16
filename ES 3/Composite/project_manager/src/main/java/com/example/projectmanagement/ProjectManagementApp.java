@@ -7,20 +7,20 @@ import com.example.projectmanagement.task.Task;
 public class ProjectManagementApp {
     public static void main(String[] args) {
         // Criar tasks simples individuais
-        Task task1 = new SimpleTask("Write code");
-        Task task2 = new SimpleTask("Test code");
+        Task task1 = new SimpleTask("Escreva código");
+        Task task2 = new SimpleTask("Teste o código");
 
         // Criar task compostas agregando outras tasks individuais
-        CompositeTask project = new CompositeTask("Develop Project");
+        CompositeTask project = new CompositeTask("Desenvolver um Projeto");
         project.addTask(task1);
         project.addTask(task2);
 
         // Criar subtasks para definir o procedimento das tasks
         Task subtask1 = new SimpleTask("Design UI");
-        Task subtask2 = new SimpleTask("Implement backend");
+        Task subtask2 = new SimpleTask("Implementar Backend");
 
         // Criar a fase onde as subtasks serão rodadas
-        CompositeTask phase1 = new CompositeTask("Phase 1");
+        CompositeTask phase1 = new CompositeTask("Fase 1");
         phase1.addTask(subtask1);
         phase1.addTask(subtask2);
 

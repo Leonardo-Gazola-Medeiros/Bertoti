@@ -20,7 +20,7 @@ public class SmartHomeFacade {
     public void returnHome() {
         securitySystem.disarm();
         lights.turnOn();
-        thermostat.setTemperature(22); // Set default temperature when returning home
+        thermostat.setTemperature(22); // Colocar Temperatura Ambiente Quando Volta Pra Casa
     }
 
     public void setTemperature(int temperature) {

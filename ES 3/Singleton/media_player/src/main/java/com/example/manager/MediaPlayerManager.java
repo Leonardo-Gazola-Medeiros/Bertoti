@@ -20,16 +20,16 @@ public class MediaPlayerManager {
             System.out.println("Playing: " + media);
             isPlaying = true;
         } else {
-            System.out.println("Media is already playing.");
+            System.out.println("Video Já Está Tocando.");
         }
     }
 
     public void stopMedia() {
         if (isPlaying) {
-            System.out.println("Stopping media.");
+            System.out.println("Parando Video.");
             isPlaying = false;
         } else {
-            System.out.println("No media is playing.");
+            System.out.println("Nenhum Vídeo Tocando.");
         }
     }
 }

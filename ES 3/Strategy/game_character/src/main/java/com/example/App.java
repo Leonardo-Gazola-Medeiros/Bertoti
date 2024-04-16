@@ -9,7 +9,7 @@ public class App
     public static void main( String[] args )
     {
         // Criar o Personagem
-        Player player = new Player("Hero");
+        Player player = new Player("Personagem");
 
         // Habilidades
         player.setAbilityStrategy(new Fireball());

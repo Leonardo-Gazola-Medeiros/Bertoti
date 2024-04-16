@@ -8,6 +8,6 @@ public class Investor {
     }
 
     public void update(String stockName, double price) {
-        System.out.println(name + ": Price of " + stockName + " has changed to " + price);
+        System.out.println(name + ": Preço de " + stockName + " Mudou Para " + price);
     }
 }

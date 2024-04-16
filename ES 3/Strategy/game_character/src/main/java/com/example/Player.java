@@ -18,7 +18,7 @@ public class Player {
         if (abilityStrategy != null) {
             abilityStrategy.performAbility();
         } else {
-            System.out.println("No ability selected.");
+            System.out.println("Nenhuma Habilidade Selecionada.");
         }
     }
 }

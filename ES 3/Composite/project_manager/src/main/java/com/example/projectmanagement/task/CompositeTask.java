@@ -21,7 +21,7 @@ public class CompositeTask implements Task {
 
     @Override
     public void execute() {
-        System.out.println("Executing composite task: " + name);
+        System.out.println("Executando tarefa composta: " + name);
         for (Task task : subtasks) {
             task.execute();
         }
