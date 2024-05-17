@@ -3,27 +3,29 @@ package com.example.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StockMarket {
-    private List<Investor> investors;
+public class StockMarket implements Subject {
+    private List<Observer> observers;
     private Stock stock;
 
     public StockMarket(Stock stock) {
-        this.investors = new ArrayList<>();
+        this.observers = new ArrayList<>();
         this.stock = stock;
     }
 
-    public void addObserver(Investor investor) {
-        investors.add(investor);
+    @Override
+    public void registerObserver(Observer observer) {
+        observers.add(observer);
     }
 
-    public void removeObserver(Investor investor) {
-        investors.remove(investor);
+    @Override
+    public void removeObserver(Observer observer) {
+        observers.remove(observer);
     }
 
+    @Override
     public void notifyObservers() {
-        double price = stock.getPrice();
-        for (Investor investor : investors) {
-            investor.update(stock.getName(), price);
+        for (Observer observer : observers) {
+            observer.update(stock.getName(), stock.getPrice());
         }
     }
 

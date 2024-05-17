@@ -15,8 +15,8 @@ public class App
         Investor investor1 = new Investor("Fulano");
         Investor investor2 = new Investor("Cicrano");
 
-        stockMarket.addObserver(investor1);
-        stockMarket.addObserver(investor2);
+        stockMarket.registerObserver(investor1);
+        stockMarket.registerObserver(investor2);
 
         // Simulate price change
         stockMarket.setStockPrice(105.00);
