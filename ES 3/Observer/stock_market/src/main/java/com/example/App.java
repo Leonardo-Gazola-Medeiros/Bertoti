@@ -18,7 +18,6 @@ public class App
         stockMarket.registerObserver(investor1);
         stockMarket.registerObserver(investor2);
 
-        // Simulate price change
         stockMarket.setStockPrice(105.00);
     }
 }
